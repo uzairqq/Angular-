@@ -6,5 +6,5 @@ templateUrl:'./product-list.component.html'
 })
 
 export class ProductComponent{
-    pageTitle:string='Product List'
+    
 }
