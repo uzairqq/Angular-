@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class ServersComponent implements OnInit {
     allowNewServer: boolean = false;
     serverCreationStatus: string = "No Server Was Created";
+    serverName:string='';
 
 
     constructor() {
@@ -21,6 +22,12 @@ export class ServersComponent implements OnInit {
     
     onServerConnect(){
         this.serverCreationStatus="server created";
+    }
+    
+    onUpdateServerName(event:Event){
+        // console.log(event);
+        this.serverName=(<HTMLInputElement>event.target).value;
+        console.log(this.serverName);
     }
 
 }

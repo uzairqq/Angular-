@@ -1,4 +1,6 @@
-<p>servers works!</p>
+<label>Server Name:</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+{{serverName}}
 <button class="btn btn-primary" (click)="onServerConnect()" [disabled]="!allowNewServer">Add Server</button>
 {{serverCreationStatus}}
 <app-server></app-server>
