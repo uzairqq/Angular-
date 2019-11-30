@@ -7,6 +7,7 @@ import {ServersComponent} from "./servers/servers.component";
 import {WarningAlertComponent} from "./warning-alert/warning-alert.component";
 import {InformationAlertComponent} from "./information-alert/information-alert.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { BindingComponentComponent } from './binding-component/binding-component.component';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
         ServerComponent,
         ServersComponent,
         WarningAlertComponent,
-        InformationAlertComponent
+        InformationAlertComponent,
+        BindingComponentComponent
     ],
     imports: [
         BrowserModule,
