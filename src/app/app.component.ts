@@ -7,6 +7,8 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
     title = 'FirstProjectTheBasics';
+    
+    messageToPass='Data Successfully Passed!';
 
     serverElements = [
         {type: 'server', name: 'TestServer1', content: 'Just a String1'},

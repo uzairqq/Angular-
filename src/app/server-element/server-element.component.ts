@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ServerElementComponent implements OnInit {
 
     @Input() element: { type: string, name: string, content: string };
+    @Input() passing: '';
 
     constructor() {
     }
