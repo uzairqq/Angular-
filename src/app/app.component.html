@@ -20,7 +20,10 @@
                     [element]="serverElement"
                     [passing]="messageToPass"
                     [sending]="messageToSend"
+                    (output)="exampleMethodParent($event)"
             ></app-server-element>
+            
         </div>
     </div>
+    {{exampleParentProperty}}
 </div>
