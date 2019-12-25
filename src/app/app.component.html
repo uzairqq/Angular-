@@ -11,7 +11,10 @@
 <!--</div>-->
 
 <div class="container">
-    <app-cockpit></app-cockpit>
+    <app-cockpit
+            (serverCreated)="onsServerAdded($event)"
+            (blueprintCreated)="onBluePrintAdded($event)">
+    </app-cockpit>
     <hr>
     <div class="row">
         <div class="col-xs-12">
@@ -22,7 +25,7 @@
                     [sending]="messageToSend"
                     (output)="exampleMethodParent($event)"
             ></app-server-element>
-            
+
         </div>
     </div>
     {{exampleParentProperty}}

@@ -21,8 +21,24 @@ export class AppComponent {
 
     ];
 
-
     exampleMethodParent($event) {
         this.exampleParentProperty = $event;
     }
+
+    onsServerAdded(serverData: { serverName: string, serverContent: string }) {
+        this.serverElements.push({
+            type: 'server',
+            name: serverData.serverName,
+            content: serverData.serverContent
+        })
+    }
+
+    onBluePrintAdded(blueprintData: { blueprintName: string, serverContent: string }) {
+        this.serverElements.push({
+            type: 'blueprint',
+            name: blueprintData.blueprintName,
+            content: blueprintData.serverContent
+        })
+    }
+
 }
