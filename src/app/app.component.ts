@@ -8,4 +8,9 @@ import {Component} from '@angular/core';
 export class AppComponent {
     serverElements: [];
 
+    myName: string = "uzair";
+    fatherName: string = "muhammad iqbal";
+    age: number = 26;
+    myExpertise: string[] = ['Angular', 'React', '.Net'];
+
 }
