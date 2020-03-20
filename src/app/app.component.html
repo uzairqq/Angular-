@@ -1,21 +1,12 @@
 <div class="container">
-
-    <app-parent
-            [firstName]="myName"
-            [secondName]="fatherName"
-            [myAge]="age"
-            [myExpertise]="myExpertise"
-    
-    ></app-parent>
-
-
-    <!--    <app-cockpit></app-cockpit>-->
-
-
-    <!--    <hr>-->
-    <!--    <div class="row">-->
-    <!--        <div class="col-xs-12">-->
-    <!--&lt;!&ndash;            <app-server-element *ngFor="let serverElement of serverElements" [element]="serverElement"></app-server-element>&ndash;&gt;-->
-    <!--        </div>-->
-    <!--    </div>-->
+    <app-cockpit></app-cockpit>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-server-element 
+            *ngFor="let serverElement of serverElements"
+            [element]="serverElement"
+            ></app-server-element>
+        </div>
+    </div>
 </div>
